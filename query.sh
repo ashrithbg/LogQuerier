@@ -7,11 +7,11 @@ then
     exit 3
 fi
 
-if ["$1" = "--help"]
+if [ "$1" == "--help" ]
 then 
 	echo "To run this file: ./query.sh <DATA_PATH>"
 	exit 3
-end
+fi
 
 if [ "$#" -gt 1 ]
 then
